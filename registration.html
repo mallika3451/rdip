@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>registration page</title>
+        <style>
+        * {
+            box-sizing: border-box;
+          }
+          
+          .column {
+            float: left;
+            width: 33.33%;
+            padding: 5px;
+          }
+          
+          /* Clearfix (clear floats) */
+          .row::after {
+            content: "";
+            clear: both;
+            display: table;
+          }
+          div.c {
+              text-align: justify; /* For Edge */
+            -moz-text-align-last: right; /* For Firefox prior 58.0 */
+            text-align-last: right;
+          } 
+          h3 {
+                      border: 1px solid black;
+                      background-color: black;
+                      padding-top: 30px;
+                      padding-right: 30px;
+                      padding-bottom: 30px;
+                      padding-left: 30px;
+                      }
+                      ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+          }
+          
+          li {
+            float: left;
+          }
+          
+          li a {
+            display: block;
+            padding: 8px;
+            background-color: black;
+          }
+        </style>
+    </head>
+    <body>
+      <form onsubmit="return res();"action="details.html " method="GET">
+        <h1 align="center">HTML assignment week 1</h1>
+        <div class="row">
+            <div class="column">
+        
+        <a href=" https://www.iiit.ac.in/">
+        <img src="https://www.iiit.ac.in/img/iiit-new.png" alt="iiith" style="width:200px;height:150px;">
+        </a></div>
+        <div class="c">
+       
+           
+        <p align="right" style="font-size:50px">
+            <a href="https://serc.iiit.ac.in/rdip">RDIP</a></p>
+            </div>
+    </div>
+    <h3>
+        <ul><li><a href="home.html">home</a></li>
+        <li><a href="registration.html">registration form</a></li> 
+    </ul></h3>
+
+    <table> 
+        <tr><td><label for="fname">First name:</label></td>
+        <td><input type="text" id="fname" name="fname" value=""></td></tr>
+        <tr><td><label for="email">E-mail:</label></td>
+        <td><input type="email" id="email" name="email" value=""></td></tr>
+        <tr><td><label for="phone no">Phone No:</label></td>
+        <td><input type="number" id="number" name="number" value=""></td></tr>
+        <tr><td>
+        Geder:</td>
+        <td>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">Other</label></td>
+        </tr>
+        <tr><td>Reason for RDIP:</td>
+        <td><input type="checkbox" id="HTML" name="languages" value="HTML">
+        <label for="HTML">HTML</label>
+        <input type="checkbox" id="CSS" name="languages" value="CSS">
+        <label for="CSS">CSS</label>
+        <input type="checkbox" id="JavaScript" name="languages" value="JavaScript">
+        <label for="JavaScript">JavaScript</label></td></tr>
+        <tr><td>college:</td>
+        <td><input type="text" id="college" name="college" value=""></td></tr>
+        <tr><th><input type="checkbox" id="decleration" name="decleration" value="deceration"></th>
+        <td><label for="decleration">I declare above details given by me are true. </label></td></tr>
+         <tr><td><input type="submit" value="Submit"></td>
+        <td><input type="reset" value="Reset"></td></tr>
+        <table>
+    </body>
+
+
+</html>
